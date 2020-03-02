@@ -1,0 +1,26 @@
+.NRIC-input {
+    font-size: 50px;
+}
+
+.guide {
+    margin-top: 20%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    color: #787474;
+}
+
+.function-bar {
+    margin-top: 2%;
+    display: flex; 
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    width: 20%;
+}

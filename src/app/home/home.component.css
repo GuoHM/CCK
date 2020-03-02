@@ -1,0 +1,30 @@
+.header {
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 70px;
+    font-family: 'Enriqueta', arial, serif;
+    line-height: 2;
+    margin: 0 0 10px;
+}
+
+.guide {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    color: #787474;
+}
+
+.button-row {
+    padding: 2%;
+    display: flex; 
+    justify-content: center;
+}
+
+button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    width: 60%;
+}
