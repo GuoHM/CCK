@@ -33,6 +33,10 @@ const routes: Routes = [
   {
     path: 'order-success',
     component: OrderSuccessComponent
+  },
+  {
+    path: 'collect',
+    component: CollectComponent
   }
 ];
 
