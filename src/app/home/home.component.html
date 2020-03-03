@@ -1,16 +1,22 @@
 <div class="container">
-    <p class="header text-center">NHIPS Community Club Kiosk</p>
-    <p class="guide text-center">Touch to begin</p>
+    <div (click)="forward()">
+        <p class="header text-center">NHIPS Community Club Kiosk</p>
+        <div class="row center">
+            <img src="assets/img/medicine.png" class="col-sm-12">
+        </div>
+        <p class="guide text-center">{{clickToBegin}}</p>
+    </div>
+
     <div class="row button-row">
-        <button class="btn btn-info" (click)="forward()">English</button>
+        <button class="btn btn-info" (click)="english()">English</button>
     </div>
     <div class="row button-row">
-        <button class="btn btn-info" (click)="forward()">中文</button>
+        <button class="btn btn-info" (click)="mandarin()">中文</button>
     </div>
     <div class="row button-row">
-        <button class="btn btn-info" (click)="forward()">Bahasa Melayu</button>
+        <button class="btn btn-info" (click)="malay()">Bahasa Melayu</button>
     </div>
     <div class="row button-row">
-        <button class="btn btn-info" (click)="forward()">தமிழ்</button>
+        <button class="btn btn-info" (click)="tamil()">தமிழ்</button>
     </div>
 </div>

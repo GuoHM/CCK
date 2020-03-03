@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FieldsetModule } from 'primeng/fieldset';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { CalendarModule } from 'primeng/calendar';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
     FormsModule,
     BrowserAnimationsModule,
     FieldsetModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    CalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

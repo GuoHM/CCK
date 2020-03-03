@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { Router } from '@angular/router';
 import {Location} from '@angular/common';
+import {CalendarModule} from 'primeng/calendar';
 
 @Component({
   selector: 'app-location',
@@ -11,7 +12,7 @@ import {Location} from '@angular/common';
 export class LocationComponent implements OnInit {
 
   brands: string[] = ['Anchorvale Community Club', 'Chong Pang Community Club', 'Mountbatten Community Club', 'Aljunied Community Centre', 'Bukit Batok Community Club', 'Chua Chu Kang Community Club', 'Eunos Community Club', 'Henderson Community Club'];
-
+  date13: Date;
   filteredBrands: any[];
 
   brand: string = 'Anchorvale Community Club';
