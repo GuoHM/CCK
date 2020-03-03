@@ -29,7 +29,20 @@ const routes: Routes = [
   {
     path: 'order-collect',
     component: OrderCollectComponent
-  }
+  },
+  {
+    path: 'order-detail',
+    component: OrderDetailComponent
+  },
+  {
+    path: 'location',
+    component: LocationComponent
+  },
+  {
+    path: 'payment',
+    component: PaymentComponent
+  },
+  
 ];
 
 @NgModule({

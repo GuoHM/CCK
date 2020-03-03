@@ -12,6 +12,9 @@ import { PaymentComponent } from './payment/payment.component';
 import { InsertCashComponent } from './insert-cash/insert-cash.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { CollectComponent } from './collect/collect.component';
+import { AutoCompleteModule } from 'primeng/autocomplete';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { CollectComponent } from './collect/collect.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AutoCompleteModule,
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
