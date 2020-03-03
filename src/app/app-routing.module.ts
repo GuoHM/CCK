@@ -31,6 +31,18 @@ const routes: Routes = [
     component: OrderCollectComponent
   },
   {
+    path: 'order-detail',
+    component: OrderDetailComponent
+  },
+  {
+    path: 'location',
+    component: LocationComponent
+  },
+  {
+    path: 'payment',
+    component: PaymentComponent
+  },
+  {
     path: 'order-success',
     component: OrderSuccessComponent
   },

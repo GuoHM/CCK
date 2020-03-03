@@ -1,1 +1,23 @@
-<p>payment works!</p>
+<div class="container">
+    <div class="row">
+        <p class="guide">Select payment method: </p>
+    </div>
+
+    <div class="row guide-item">
+        <div class="col-sm-6 center-title">
+            Cash
+        </div>
+        <div class="col-sm-6 center-title">
+            Card
+        </div>
+    </div>
+    <div class="row">
+        <img src="assets/img/cash.png" class="btn btn-primary col-sm-6 image-holder" (click)="cash()">
+        <img src="assets/img/card.png" class="btn btn-primary col-sm-6 image-holder" (click)="card()">
+    </div>
+<!-- <span style="margin-left:50px">Brand: {{brand||'none'}}</span> -->
+
+    <div class="row function-bar">
+        <button class="btn btn-primary" (click)="back()">Back</button>
+    </div>
+</div>
