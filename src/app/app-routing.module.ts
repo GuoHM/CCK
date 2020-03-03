@@ -42,7 +42,10 @@ const routes: Routes = [
     path: 'payment',
     component: PaymentComponent
   },
-  
+  {
+    path: 'order-success',
+    component: OrderSuccessComponent
+  }
 ];
 
 @NgModule({

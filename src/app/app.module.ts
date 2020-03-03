@@ -15,6 +15,8 @@ import { CollectComponent } from './collect/collect.component';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FieldsetModule } from 'primeng/fieldset';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     AutoCompleteModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FieldsetModule,
+    OverlayPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]
