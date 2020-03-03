@@ -13,6 +13,10 @@ import { InsertCashComponent } from './insert-cash/insert-cash.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { CollectComponent } from './collect/collect.component';
 
+import { FieldsetModule } from 'primeng/fieldset';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +32,10 @@ import { CollectComponent } from './collect/collect.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FieldsetModule,
+    OverlayPanelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

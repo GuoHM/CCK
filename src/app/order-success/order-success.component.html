@@ -1,1 +1,23 @@
-<p>order-success works!</p>
+<div class="container">
+	<p class="guide text-center">
+		Order Successful!
+	</p>
+
+	<p-overlayPanel #op>
+	    <p class="content">
+	    	Please collect your receipt.
+    	</p>
+	</p-overlayPanel>
+
+	<div class="row button-row">
+		<button class="btn btn-info" pButton label="Basic" [disabled]="check()" (click)="disabled($event, op)">
+			Print Receipt
+		</button>
+	</div>
+
+	<div class="row button-row">
+		<button class="btn btn-info" (click)="forward()">
+			Back to Home
+		</button>
+	</div>
+</div>

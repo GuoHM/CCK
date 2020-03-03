@@ -29,6 +29,10 @@ const routes: Routes = [
   {
     path: 'order-collect',
     component: OrderCollectComponent
+  },
+  {
+    path: 'order-success',
+    component: OrderSuccessComponent
   }
 ];
 
