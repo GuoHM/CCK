@@ -1,13 +1,11 @@
 <div class="container">
     <div class="row">
         <p class="guide">Select your location: </p>
-        <input type="text" class="form-control NRIC-input" [(ngModel)]="brand" placeholder="Anchorvale Community Club" >
     </div>
-    <br>
 
     <div class="row" style="margin-top: 20px;">
         <!-- <div class="offset-sm-9 col-sm-1"> -->
-            <p-autoComplete [(ngModel)]="brand" [suggestions]="filteredBrands" (completeMethod)="filterBrands($event)" [size]="148"
+            <p-autoComplete [(ngModel)]="brand" [suggestions]="filteredBrands" (completeMethod)="filterBrands($event)" [size]="140"
             [minLength]="1" placeholder="Other Community Centres" [dropdown]="true">
             <ng-template let-brand pTemplate="item">
                 <div class="ui-helper-clearfix" style="border-bottom:1px solid #D5D5D5">

@@ -14,7 +14,7 @@ export class LocationComponent implements OnInit {
 
   filteredBrands: any[];
 
-  brand: string;
+  brand: string = 'Anchorvale Community Club';
   // brand: string = "Anchorvale Community Club";
   constructor(
     private location: Location,
