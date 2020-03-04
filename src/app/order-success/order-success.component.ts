@@ -14,7 +14,16 @@ export class OrderSuccessComponent implements OnInit {
   ngOnInit() {
   }
 
-  forward() {
+  check() {
+    return this.btnDisplay;
+  }
+
+  disabled(event, overlaypanel){
+    overlaypanel.toggle(event);
+    this.btnDisplay = true;
+  }
+
+  home() {
   	this.router.navigate(['/home']);
   }
 
