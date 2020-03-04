@@ -28,3 +28,47 @@ button {
 .ui-calendar {
     width: auto !important;
 } */
+
+.test {
+    font-size: 30px;
+    height: 100px;
+    min-height: 150px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    line-height: 80px;
+    
+}
+
+/* ::ng-deep .ui-datepicker.ui-datepicker{
+    padding:initial;
+    font: size 300 !important;
+} */
+
+/* ::ng-deep .ui-datepicker.ui-datepicker{
+padding:initial;
+font-size: larger !important;
+} */
+
+/* ::ng-deep .ui-datepicker.ui-datepicker td{
+padding:initial;
+font: size 300 !important;
+} */
+
+/* ::ng-deep .ui-datepicker.ui-datepicker td{
+    padding:initial;
+    font-size: larger !important;
+} */
+    
+/* ::ng-deep div.ui-datepicker .ui-datepicker{
+    padding:initial;
+    font-size:larger !important;
+} */
+
+::ng-deep .ui-autocomplete-dropdown.ui-button {
+    width: 2.357em;
+    height: 2.4em;
+    font-size: 32px;
+}
+
+::ng-deep .ui-fluid .ui-inputtext {
+    FONT-SIZE: XX-LARGE;
+}
