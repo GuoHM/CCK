@@ -7,24 +7,26 @@
         <img src="assets/img/master.png" alt="visa" class="image-holder">
     </div>
     <br>
-
-    <form role="form">
-        <div class="form-group col-md-6">
-            <label for="Cardnumber">Card Number: </label>
-            <input id="cardnumber" type="text" size="30" pInputText placeholder="16 Digits"> 
-            <br>
-            <label for="Expiration">Expiration Date: </label>
-            <p-calendar [(ngModel)]="date12" view="month" dateFormat="mm/yy" [yearNavigator]="true" yearRange="2000:2030" [readonlyInput]="true"></p-calendar>
-            <br>
-            <label for="secure">Security code: </label>
-            <input id="code" type="text" size="5" pInputText placeholder="CV">
+    <form>
+        <div class="form-row">
+            <div class="col-md-12">
+                <label for="card" class="guide">Card Number</label>
+                <input type="text" class="form-control input" id="card">
+            </div>
         </div>
-    <div class="row function-bar">
-        <button class="btn btn-primary display" (click)="back()">Cancel</button>
-        <button class="btn btn-primary display" (click)="pay()">Pay</button>
-    </div>
+        <div class="form-row">
+            <div class="col-6">
+                <label for="date" class="guide">Expiration Date</label>
+                <input type="month" class="form-control input" id="date">
+            </div>
+            <div class="col-6">
+                <label for="code" class="guide">CSV</label>
+                <input type="text" class="form-control input" id="code">
+            </div>
+        </div>
+        <div class="row function-bar">
+            <button class="btn btn-info display" (click)="back()">Cancel</button>
+            <button class="btn btn-info display" (click)="pay()">Pay</button>
+        </div>
     </form>
-    
-    
-    
 </div>
