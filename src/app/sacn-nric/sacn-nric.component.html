@@ -1,10 +1,15 @@
 <div class="container">
     <div class="row">
-        <p class="guide">Please scan your NRIC:</p>
-        <input type="text" class="form-control NRIC-input" >
+        <form [formGroup]="NRICForm" class="guide">
+            <input type="text" class="form-control NRIC-input" formControlName="nric" id="NRIC"
+                [ngClass]="{ 'is-invalid': f.nric.errors, 'is-valid':!f.nric.errors }">
+            <div class="invalid-feedback">
+                <div>Please scan your NRIC</div>
+            </div>
+        </form>
     </div>
     <div class="row function-bar">
         <button class="btn btn-info" (click)="back()">Back</button>
-        <button class="btn btn-info" (click)="forward()">Continue</button>
+        <button class="btn btn-info" (click)="forward()" [disabled]="f.nric.errors">Continue</button>
     </div>
 </div>

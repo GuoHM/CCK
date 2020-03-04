@@ -13,7 +13,7 @@ import { InsertCashComponent } from './insert-cash/insert-cash.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { CollectComponent } from './collect/collect.component';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FieldsetModule } from 'primeng/fieldset';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
@@ -44,7 +44,8 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     FieldsetModule,
     OverlayPanelModule,
     CalendarModule,
-    DialogModule
+    DialogModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

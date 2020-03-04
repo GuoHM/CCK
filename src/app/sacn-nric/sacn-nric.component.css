@@ -1,5 +1,6 @@
 .NRIC-input {
-    font-size: 50px;
+    font-size: 70px;
+    width:1100px;
 }
 
 .guide {
@@ -23,4 +24,8 @@ button {
     display: inline-block;
     font-size: 30px;
     width: 20%;
+}
+
+.invalid-feedback {
+    font-size: 40px;
 }
