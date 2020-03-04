@@ -13,26 +13,26 @@ export class OrderDetailComponent implements OnInit {
     {
       name: "Insulin",
       duration: "1/2/20-1/3/2020",
-      cost: "$50"
+      cost: "$50.00"
     },
     {
       name: "Antibiotics",
       duration: "1/2/20-1/3/2020",
-      cost: "$20"
+      cost: "$20.00"
     },
     {
       name: "Vicodin",
       duration: "1/2/20-1/3/2020",
-      cost: "$24"
+      cost: "$24.00"
     },
     {
       name: "Simvastatin ",
       duration: "1/2/20-1/3/2020",
-      cost: "$37"
+      cost: "$37.00"
     }
   ]
 
-  total: number = 131;
+  total: number = 131.00;
   constructor(    
     private location: Location,
     private router: Router
