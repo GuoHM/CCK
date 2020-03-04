@@ -19,6 +19,7 @@ import { FieldsetModule } from 'primeng/fieldset';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { CalendarModule } from 'primeng/calendar';
 import { DialogModule } from 'primeng/dialog';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { DialogModule } from 'primeng/dialog';
     PaymentComponent,
     InsertCashComponent,
     OrderSuccessComponent,
-    CollectComponent
+    CollectComponent,
+    ConfirmationComponent
   ],
   imports: [
     BrowserModule,

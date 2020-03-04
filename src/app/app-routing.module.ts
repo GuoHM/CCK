@@ -10,7 +10,7 @@ import { PaymentComponent } from './payment/payment.component';
 import { InsertCashComponent } from './insert-cash/insert-cash.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { CollectComponent } from './collect/collect.component';
-
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 
 const routes: Routes = [
   {
@@ -49,6 +49,10 @@ const routes: Routes = [
   {
     path: 'collect',
     component: CollectComponent
+  },
+  {
+    path: 'confirmation',
+    component: ConfirmationComponent
   }
 ];
 

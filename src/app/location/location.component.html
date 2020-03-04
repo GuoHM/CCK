@@ -4,7 +4,7 @@
     </div>
     <div class="ui-g ui-fluid">
     <div class="ui-g-12" style="margin-top: 20px;">
-        <h3>Community Centre  </h3>
+        <p class="guideT">Community Centre</p>
         <!-- <div class="offset-sm-9 col-sm-1"> -->
             <p-autoComplete [(ngModel)]="brand" [suggestions]="filteredBrands" (completeMethod)="filterBrands($event)"
             [minLength]="1" placeholder="Other Community Centres" [dropdown]="true">
@@ -18,7 +18,7 @@
     </div>
     
     <div class="ui-g-12" style="margin-top: 20px;">
-        <h3>Date of collection </h3>
+        <p class="guideT">Date of Collection</p>
         <p-calendar class="test" [(ngModel)]="date13" [touchUI]="true" [readonlyInput]="true"></p-calendar >
     </div>
     </div>

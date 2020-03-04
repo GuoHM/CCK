@@ -9,6 +9,13 @@
     color: #787474;
 }
 
+.guideT {
+    /* margin-top: 20%; */
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 48px;
+    color: #787474;
+}
+
 .function-bar {
     margin-top: 2%;
     display: flex; 
