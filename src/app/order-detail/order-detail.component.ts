@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {TableModule} from 'primeng/table';
 import {Medications} from '../models/medication';
 import { Router } from '@angular/router';
 import {Location} from '@angular/common';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import {Location} from '@angular/common';
 import {CalendarModule} from 'primeng/calendar';
 
@@ -19,14 +19,15 @@ export class LocationComponent implements OnInit {
   // brand: string = "Anchorvale Community Club";
   constructor(
     private location: Location,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
   }
 
   forward() {
-    this.router.navigate(['/payment']);
+    this.router.navigate(['/confirmation', {location: this.brand, date: this.date13.toDateString()}]);
   }
 
   back() {

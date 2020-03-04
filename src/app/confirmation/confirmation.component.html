@@ -1,1 +1,38 @@
-<p>confirmation works!</p>
+<div class="container">
+    <div class="row">
+        <p class="guide">Confirmation</p>
+    </div>
+    <table class="table table-bordered">
+        <thead class="guideTitle">
+            <td></td>
+            <td>Medication Name</td>
+            <td>Duration</td>
+            <td>Cost ($)</td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let medication of listOfMedication; let i=index;">
+                <th class="guide">{{i+1}}</th>
+                <td class="guide">{{ medication.name }}</td>
+                <td class="guide">{{ medication.duration }}</td>
+                <td class="guide">{{ medication.cost }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="guideTitle offset-md-8 col-sm-4">
+            Total: ${{total}}
+        </div>
+    </div>
+    <div class="row">
+        <p class="guideTitle">Location</p>
+        <input type="text" class="form-control NRIC-input" [ngModel]="communityCentre" [readonly]="true">
+    </div>
+    <div class="row">
+        <p class="guideTitle">Date of Collection</p>
+        <input type="text" class="form-control NRIC-input" [ngModel]="dateOfCollection" [readonly]="true">
+    </div>
+    <div class="row function-bar">
+        <button class="btn btn-info" (click)="back()">Back</button>
+        <button class="btn btn-info" (click)="forward()">Continue</button>
+    </div>
+</div>
