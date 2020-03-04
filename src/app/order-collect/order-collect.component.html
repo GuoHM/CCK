@@ -7,13 +7,21 @@
         <button type="button" pButton icon="pi pi-check" (click)="displayModal=false" label="OK"></button>
     </p-footer>
 </p-dialog>
+
 <div class="container">
-    <div class="row upperfunction-bar">
-        <button class="btn btn-info upperXtra" (click)="collect()">Collect</button>
-        <div class="divider"></div>
-        <button class="btn btn-info upperXtra" (click)="order()">Order</button>
+    <div class="row guide-item">
+        <div class="col-sm-6 center-title">
+            Collect
+        </div>
+        <div class="col-sm-6 center-title">
+            Order
+        </div>
     </div>
-    <div class="row lowerfunction-bar">
-        <button class="btn btn-info lowerXtra" (click)="back()">Back</button>
+    <div class="row">
+        <img src="assets/img/collect.png" class="btn btn-primary col-sm-6 image-holder" (click)="collect()">
+        <img src="assets/img/order.png" class="btn btn-primary col-sm-6 image-holder" (click)="order()">
+    </div>
+    <div class="row function-bar">
+        <button class="btn btn-primary display" (click)="back()">Back</button>
     </div>
 </div>

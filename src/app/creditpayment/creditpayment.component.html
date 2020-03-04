@@ -1,0 +1,30 @@
+<div class="container">
+    <p class="guide">Payment method:</p>
+    <div class="row">
+        <p-radioButton name="groupname" value="val1" [(ngModel)]="selectedValue"></p-radioButton>
+        <img src="assets/img/visa.png" alt="visa" class="image-holder">&nbsp;
+        <p-radioButton name="groupname" value="val2" [(ngModel)]="selectedValue"></p-radioButton>
+        <img src="assets/img/master.png" alt="visa" class="image-holder">
+    </div>
+    <br>
+
+    <form role="form">
+        <div class="form-group col-md-6">
+            <label for="Cardnumber">Card Number: </label>
+            <input id="cardnumber" type="text" size="30" pInputText placeholder="16 Digits"> 
+            <br>
+            <label for="Expiration">Expiration Date: </label>
+            <p-calendar [(ngModel)]="date12" view="month" dateFormat="mm/yy" [yearNavigator]="true" yearRange="2000:2030" [readonlyInput]="true"></p-calendar>
+            <br>
+            <label for="secure">Security code: </label>
+            <input id="code" type="text" size="5" pInputText placeholder="CV">
+        </div>
+    <div class="row function-bar">
+        <button class="btn btn-primary display" (click)="back()">Cancel</button>
+        <button class="btn btn-primary display" (click)="pay()">Pay</button>
+    </div>
+    </form>
+    
+    
+    
+</div>

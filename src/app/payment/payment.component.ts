@@ -23,7 +23,7 @@ export class PaymentComponent implements OnInit {
   }
 
   card() {
-    this.router.navigate(['/insert-card']);
+    this.router.navigate(['/creditpayment']);
   }
 
   back() {
