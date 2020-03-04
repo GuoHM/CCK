@@ -11,6 +11,7 @@ import { InsertCashComponent } from './insert-cash/insert-cash.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { CollectComponent } from './collect/collect.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { CreditpaymentComponent } from './creditpayment/creditpayment.component';
 
 const routes: Routes = [
   {
@@ -53,6 +54,14 @@ const routes: Routes = [
   {
     path: 'confirmation',
     component: ConfirmationComponent
+  },
+  {
+    path: 'creditpayment',
+    component: CreditpaymentComponent
+  },
+  {
+    path: 'insert-cash',
+    component: InsertCashComponent
   }
 ];
 

@@ -20,6 +20,9 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { CalendarModule } from 'primeng/calendar';
 import { DialogModule } from 'primeng/dialog';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { CreditpaymentComponent } from './creditpayment/creditpayment.component';
+import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputTextModule } from 'primeng/inputtext';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     InsertCashComponent,
     OrderSuccessComponent,
     CollectComponent,
-    ConfirmationComponent
+    ConfirmationComponent,
+    CreditpaymentComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +49,9 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
     OverlayPanelModule,
     CalendarModule,
     DialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RadioButtonModule,
+    InputTextModule
   ],
   providers: [],
   bootstrap: [AppComponent]
