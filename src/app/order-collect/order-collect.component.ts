@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
+ 
+import { Location } from'@angular/common';
 import { Router } from '@angular/router';
-
-import { OverlayPanelModule } from 'primeng/overlaypanel';
-
+import { SacnNRICComponent } from '../sacn-nric/sacn-nric.component';
+import {DialogModule} from 'primeng/dialog';
 
 @Component({
   selector: 'app-order-collect',
@@ -11,26 +11,27 @@ import { OverlayPanelModule } from 'primeng/overlaypanel';
   styleUrls: ['./order-collect.component.css']
 })
 export class OrderCollectComponent implements OnInit {
-
-
-  constructor(private router: Router) { }
-
-  btnDisplay : boolean = false;
-
-  ngOnInit() {
+  displayModal: boolean = true;
+  constructor(
+    private location: Location,
+    private router: Router,
+  ) { }
+ 
+  ngOnInit(
+  ) {}
+ 
+  collect() {
+    this.router.navigate(['/collect']);
   }
-
-  check() {
-    return this.btnDisplay;
+  order() {
+    this.router.navigate(['/order-detail']);
   }
-
-  disabled(event, overlaypanel){
-    overlaypanel.toggle(event);
-    this.btnDisplay = true;
+ 
+  back() {
+    this.location.back();
   }
-
-  home() {
-  	this.router.navigate(['/home']);
-  }
-
+  showModalDialog() {
+    this.displayModal = true;
+}
+ 
 }

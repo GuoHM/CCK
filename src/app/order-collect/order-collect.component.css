@@ -1,0 +1,37 @@
+.upperfunction-bar {
+    margin-top: 5%;
+    display: flex; 
+    justify-content: center;
+}
+ 
+.lowerfunction-bar {
+    margin-top: 5%;
+    display: flex; 
+    justify-content: center;
+}
+ 
+.divider{
+    margin:50px;
+}
+ 
+.upperXtra{
+    border: none;
+    padding: 100px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    width: 25%;
+}
+ 
+.lowerXtra{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    width: 25%;
+}
+.display {
+    font-size: 50px;
+}

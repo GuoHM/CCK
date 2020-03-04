@@ -1,1 +1,19 @@
-<p>order-collect works!</p>
+<p-dialog  [(visible)]="displayModal" [modal]="true" [style]="{width: '50vw'}" [baseZIndex]="10000"
+    [draggable]="false" [resizable]="false">
+    <h2 class="text-center">Welcome</h2>
+    <h3>Name: Tan Geok Chee</h3>
+    <h3>NRIC: S9XXXXXXXC</h3>
+    <p-footer>
+        <button type="button" pButton icon="pi pi-check" (click)="displayModal=false" label="OK"></button>
+    </p-footer>
+</p-dialog>
+<div class="container">
+    <div class="row upperfunction-bar">
+        <button class="btn btn-info upperXtra" (click)="collect()">Collect</button>
+        <div class="divider"></div>
+        <button class="btn btn-info upperXtra" (click)="order()">Order</button>
+    </div>
+    <div class="row lowerfunction-bar">
+        <button class="btn btn-info lowerXtra" (click)="back()">Back</button>
+    </div>
+</div>
